@@ -79,7 +79,7 @@ export default function SpecializedUnits() {
                         <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
                             Specialized Clinical Units
                         </h2>
-                        <p className="text-slate-600 mt-1.5 text-sm sm:text-base">
+                        <p className="text-slate-600 mt-1.5 text-base sm:text-base">
                             Board-certified departments providing coordinated outpatient and diagnostic treatment paths.
                         </p>
                     </div>
@@ -98,7 +98,7 @@ export default function SpecializedUnits() {
                     {clinicalUnits.map((department) => (
                         <div
                             key={department.id}
-                            className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
+                            className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between hover:-translate-y-1"
                         >
                             <div>
                                 {/* Icon Container with light background */}
@@ -107,12 +107,12 @@ export default function SpecializedUnits() {
                                 </div>
 
                                 {/* Unit Title */}
-                                <h3 className="text-lg font-bold text-slate-900 mb-2">
+                                <h3 className="text-xl font-bold text-slate-900 mb-2">
                                     {department.title}
                                 </h3>
 
                                 {/* Unit Description */}
-                                <p className="text-sm text-slate-600 leading-relaxed mb-6">
+                                <p className="text-base text-slate-600 leading-relaxed mb-6">
                                     {department.description}
                                 </p>
                             </div>
@@ -120,7 +120,7 @@ export default function SpecializedUnits() {
                             {/* Action Link */}
                             <Link
                                 href={department.href}
-                                className="inline-flex items-center space-x-1 text-sm font-bold text-slate-600 hover:text-blue-700 transition-colors group/link pt-2 border-t border-slate-50"
+                                className="inline-flex items-center space-x-1 text-base font-bold text-slate-600 hover:text-blue-700 transition-colors group/link pt-2 border-t border-slate-50"
                             >
                                 <span>Explore Department</span>
                             </Link>

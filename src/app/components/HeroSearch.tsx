@@ -1,4 +1,4 @@
-import {Button} from "./Button";
+import { Button } from "./ui/Button";
 
 export default function HeroSearch() {
     return (
@@ -17,20 +17,20 @@ export default function HeroSearch() {
                         id="condition"
                         type="text"
                         placeholder="e.g. Cardiology, Dr. Marcus"
-                        className="w-full rounded-lg bg-slate-100 px-8 py-4  text-sm outline-none focus:ring-2 focus:ring-sky-700"
+                        className="w-full rounded-lg bg-slate-100 px-8 py-4  text-base outline-none focus:ring-2 focus:ring-sky-700"
                     />
                 </div>
                 <div>
                     <label
                         htmlFor="specialty"
-                        className="mb-2 block text-sm font-medium uppercase tracking-wide text-slate-600"
+                        className="mb-2 block text-base font-medium uppercase tracking-wide text-slate-600"
                     >
                         Specialty
                     </label>
 
                     <select
                         id="specialty"
-                        className="w-full rounded-lg bg-slate-100 px-8 py-4  text-sm outline-none focus:ring-2 focus:ring-sky-700"
+                        className="w-full rounded-lg bg-slate-100 px-8 py-4  text-base outline-none focus:ring-2 focus:ring-sky-700"
                     >
                         <option>All Specialties</option>
                         <option>Cardiology</option>
@@ -44,7 +44,7 @@ export default function HeroSearch() {
                 <div>
                     <label
                         htmlFor="location"
-                        className="mb-2 block text-sm font-medium uppercase tracking-wide text-slate-600"
+                        className="mb-2 block text-base font-medium uppercase tracking-wide text-slate-600"
                     >
                         Location
                     </label>
@@ -53,7 +53,7 @@ export default function HeroSearch() {
                         id="location"
                         type="text"
                         placeholder="City or ZIP code"
-                        className="w-full rounded-lg bg-slate-100 px-8 py-4  text-sm outline-none focus:ring-2 focus:ring-sky-700"
+                        className="w-full rounded-lg bg-slate-100 px-8 py-4  text-base outline-none focus:ring-2 focus:ring-sky-700"
                     />
                 </div>
 

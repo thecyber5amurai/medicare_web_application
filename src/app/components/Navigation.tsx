@@ -3,14 +3,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Button } from './Button';
+import { Button } from './ui/Button';
 
 const medicalCross = "/assets/medical-logo.png";
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/specialists", label: "Specialists" },
-  { href: "/patient-care", label: "Patient Care" },
-  { href: "/contact", label: "Contact" },
+    { href: "/", label: "Home" },
+    { href: "/specialists", label: "Specialists" },
+    { href: "/patient-care", label: "Patient Care" },
+    { href: "/contact", label: "Contact" },
 ];
 
 export default function NavigationBar() {
@@ -36,11 +36,10 @@ export default function NavigationBar() {
                         <Link
                             key={link.href}
                             href={link.href}
-                            className={`font-medium text-lg transition-colors ${
-                                isActive 
-                                    ? 'text-sky-400 font-semibold' 
+                            className={`font-medium text-lg transition-colors ${isActive
+                                    ? 'text-sky-400 font-semibold'
                                     : 'text-slate-500 hover:text-sky-300'
-                            }`}
+                                }`}
                         >
                             {link.label}
                         </Link>
@@ -48,15 +47,15 @@ export default function NavigationBar() {
                 })}
             </nav>
             <div className="flex items-center gap-8">
-                <div className="hidden lg:flex items-center gap-2 bg-blue-50/80 text-blue-900 px-4 py-2 rounded-full text-xs font-bold border border-blue-100 mx-12">
+                <div className="hidden lg:flex items-center gap-2 bg-blue-50/80 px-4 py-2 rounded-full text-xs font-bold border border-blue-100 mx-12">
                     <span className="text-emerald-600 text-sm">✳</span>
                     <span className="text-xs text-emerald-700">HOTLINE: 1-800-MEDICARE</span>
                 </div>
                 <Button variant='secondary' size='md'>
-                    Sign In
+                    <Link href="/login">Sign In</Link>
                 </Button>
                 <Button variant="primary" size="md">
-                     Book Appointment
+                    <Link href="/book-appointment">Book Appointment</Link>
                 </Button>
             </div>
         </header>

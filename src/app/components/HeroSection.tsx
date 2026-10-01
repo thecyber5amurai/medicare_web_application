@@ -10,19 +10,19 @@ export default function HeroSection() {
 
                 <div className="grid items-center gap-12 lg:grid-cols-2">
                     <div>
-                        <p className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-emerald-700">
-                            <span className="h-2 w-2 rounded-full bg-emerald-600" />
+                        <p className="flex items-center gap-2 text-base font-semibold uppercase tracking-wide text-sky-700">
+                            <span className="h-2 w-2 rounded-full bg-sky-700" />
                             Board-certified clinical network
                         </p>
 
                         <h1 className="mt-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
                             Your health, connected to{" "}
-                            <span className="text-emerald-700">
+                            <span className="text-sky-700">
                                 exceptional care.
                             </span>
                         </h1>
 
-                        <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+                        <p className="mt-6 max-w-2xl text-xl leading-8 text-slate-600">
                             Find verified specialists, schedule in-person clinic
                             consultations, and manage diagnostics seamlessly with
                             HIPAA-compliant standards.
