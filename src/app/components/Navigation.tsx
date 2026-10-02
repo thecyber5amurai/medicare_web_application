@@ -48,8 +48,8 @@ export default function NavigationBar() {
             </nav>
             <div className="flex items-center gap-8">
                 <div className="hidden lg:flex items-center gap-2 bg-blue-50/80 px-4 py-2 rounded-full text-xs font-bold border border-blue-100 mx-12">
-                    <span className="text-emerald-600 text-sm">✳</span>
-                    <span className="text-xs text-emerald-700">HOTLINE: 1-800-MEDICARE</span>
+                    <span className="text-sky-700 text-sm">✳</span>
+                    <span className="text-xs text-sky-700">HOTLINE: 1-800-MEDICARE</span>
                 </div>
                 <Button variant='secondary' size='md'>
                     <Link href="/login">Sign In</Link>
