@@ -30,11 +30,14 @@ const specialtySelections: SpecialtySelection[] = [
     { id: 6, label: "Neurology", count: 18 },
 ]
 
+type SortOption = "Highest Rated" | "Earliest Available" | "Most Experienced" | "Price: Low to High";
+
 export default function SpecialistsFilter() {
     const [fee, setFee] = useState(220);
     const [availability, setAvailability] = useState("today");
     const [selectedSpecialty, setSelectedSpecialty] = useState<string[]>([]);
     const [searchQuery, setSearchQuery] = useState("");
+    const [sortOption, setSortOption] = useState<SortOption>("Highest Rated");
 
     function handleSpecialtyChange(specialtyId: number) {
         setSelectedSpecialty((prev) => 
@@ -54,7 +57,7 @@ export default function SpecialistsFilter() {
                     <SlidersHorizontal className="w-4 h-4 text-slate-700" />
                     <span>Filter Practitioners</span>
                 </div>
-                <button className="text-sm font-medium text-blue-600 hover:underline">
+                <button className="text-sm font-medium text-sky-700 hover:underline">
                     Reset
                 </button>
             </div>
@@ -159,5 +162,6 @@ export default function SpecialistsFilter() {
             </div>
 
         </aside>
+
     );
 }
