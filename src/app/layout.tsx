@@ -21,7 +21,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MediCare Web application",
+  title: {
+    default: "Home - MediCare",
+    template: "%s - MediCare",
+  },
   description: "Bringing well-equipped and modern medical benefits to user's doorstep",
 };
 

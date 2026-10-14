@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { HeartPulse, Brain, Baby, CircleCheck, ArrowRight } from "lucide-react";
 
-interface Specialists {
+interface Specialist {
     id: number;
     name: string;
     specialty: string;
@@ -10,7 +10,7 @@ interface Specialists {
     status: string;
 }
 
-const specialists: Specialists[] = [
+const specialists: Specialist[] = [
     {
         id: 1,
         name: "Dr. Marcus Vance, MD",
